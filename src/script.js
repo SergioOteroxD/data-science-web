@@ -1,5 +1,12 @@
 // Agrega interactividad con JavaScript
+// Seleccionamos los elementos del menú
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
 
+// Agregamos un evento para abrir/cerrar el menú cuando se haga clic en el ícono hamburguesa
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active"); // Cambiaremos la clase para mostrar u ocultar el menú
+});
 // Cuando el botón de contacto es clickeado, muestra una alerta
 document.getElementById('contactBtn').addEventListener('click', function() {
     alert('Gracias por contactarnos. Pronto nos pondremos en contacto contigo.');
@@ -28,3 +35,4 @@ navLinks.forEach(link => {
         link.style.color = '#fff';
     });
 });
+

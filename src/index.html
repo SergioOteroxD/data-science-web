@@ -1,103 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciencia de Datos</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Enlace al archivo CSS -->
+  </head>
+  <body>
     <!-- Encabezado -->
     <header>
+      <div class="logo">
         <h1>Ciencia de Datos</h1>
-        <p>Explorando el mundo de los datos y el análisis avanzado</p>
-    </header>
-
-    <!-- Barra de navegación -->
-    <nav>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav id="nav-menu">
         <a href="#introduccion">Introducción</a>
         <a href="#herramientas">Herramientas</a>
         <a href="#aplicaciones">Aplicaciones</a>
         <a href="#contacto">Contacto</a>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Sección principal -->
-    <section>
-        <article id="introduccion">
-            <h2>¿Qué es la Ciencia de Datos?</h2>
-            <p>La ciencia de datos es un campo interdisciplinario que utiliza métodos, algoritmos, procesos y sistemas científicos para extraer conocimiento y obtener insights a partir de datos estructurados y no estructurados.</p>
+    <section id="introduccion">
+      <article>
+        <h2>¿Qué es la Ciencia de Datos?</h2>
+        <div class="contenido">
+          <div class="texto">
+            <p>
+              La ciencia de datos es un campo interdisciplinario que utiliza
+              métodos, algoritmos, procesos y sistemas científicos para extraer
+              conocimiento y obtener insights a partir de datos estructurados y
+              no estructurados.
+            </p>
+            <h3>Áreas principales de la Ciencia de Datos:</h3>
             <ul>
-                <li>Exploración de datos</li>
-                <li>Análisis estadístico</li>
-                <li>Modelado predictivo</li>
+              <li>Exploración de datos</li>
+              <li>Análisis estadístico</li>
+              <li>Modelado predictivo</li>
             </ul>
-            <img src="https://i.blogs.es/ffcef7/data-science-vs.-data-analytics-vs.-machine-learning/1366_2000.jpeg" alt="Ciencia de Datos">
-        </article>
+          </div>
+          <div class="imagen">
+            <img
+              src="https://i.blogs.es/ffcef7/data-science-vs.-data-analytics-vs.-machine-learning/1366_2000.jpeg"
+              alt="Representación gráfica de los conceptos de Ciencia de Datos"
+            />
+          </div>
+        </div>
+      </article>
 
-        <article id="herramientas">
-            <h2>Herramientas para Ciencia de Datos</h2>
-            <p>Algunas de las herramientas más utilizadas en ciencia de datos incluyen:</p>
-            <ol>
-                <li>Python</li>
-                <li>R</li>
-                <li>SQL</li>
-                <li>Tableau</li>
-            </ol>
+      <article id="herramientas">
+        <h2>Herramientas para Ciencia de Datos</h2>
+        <p>
+          Algunas de las herramientas más utilizadas en ciencia de datos
+          incluyen:
+        </p>
+        <ol>
+          <li>Python</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>Tableau</li>
+        </ol>
+        <h3>Comparación de Herramientas</h3>
+        <table>
+          <tr>
+            <th>Herramienta</th>
+            <th>Descripción</th>
+            <th>Uso Común</th>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Lenguaje de programación versátil</td>
+            <td>Análisis de datos, aprendizaje automático</td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>Lenguaje estadístico</td>
+            <td>Modelado estadístico, análisis de datos</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>Lenguaje de consulta de bases de datos</td>
+            <td>Gestión y consulta de datos</td>
+          </tr>
+        </table>
+      </article>
 
-            <h3>Comparación de Herramientas</h3>
-            <table>
-                <tr>
-                    <th>Herramienta</th>
-                    <th>Descripción</th>
-                    <th>Uso Común</th>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Lenguaje de programación versátil</td>
-                    <td>Análisis de datos, aprendizaje automático</td>
-                </tr>
-                <tr>
-                    <td>R</td>
-                    <td>Lenguaje estadístico</td>
-                    <td>Modelado estadístico, análisis de datos</td>
-                </tr>
-                <tr>
-                    <td>SQL</td>
-                    <td>Lenguaje de consulta de bases de datos</td>
-                    <td>Gestión y consulta de datos</td>
-                </tr>
-            </table>
-        </article>
-
-        <article id="aplicaciones">
-            <h2>Aplicaciones de la Ciencia de Datos</h2>
-            <p>La ciencia de datos tiene aplicaciones en múltiples industrias, tales como:</p>
-            <ul>
-                <li>Finanzas</li>
-                <li>Salud</li>
-                <li>Marketing</li>
-                <li>Tecnología</li>
-            </ul>
-
-            <h3>Contenido Externo</h3>
-            <!-- Iframe para contenido externo -->
-            <iframe width="711" height="400" src="https://www.youtube.com/embed/5uIjPUyOX_U" title="Explorando el Mundo de la Ciencia de Datos: Todo lo que Debes Saber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
+      <article id="aplicaciones">
+        <h2>Aplicaciones de la Ciencia de Datos</h2>
+        <p>
+          La ciencia de datos tiene aplicaciones en múltiples industrias, tales
+          como:
+        </p>
+        <ul>
+          <li>Finanzas</li>
+          <li>Salud</li>
+          <li>Marketing</li>
+          <li>Tecnología</li>
+        </ul>
+        <h3>Contenido Externo</h3>
+        <iframe
+          src="https://www.youtube.com/embed/5uIjPUyOX_U"
+          width="711"
+          height="400"
+          title="Explorando el Mundo de la Ciencia de Datos"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </article>
     </section>
 
-    <!-- Botón de llamada a la acción -->
+    <!-- Sección de contacto -->
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si estás interesado en aprender más sobre ciencia de datos, contáctenos:</p>
-        <p>Actividad de DISEÑO DE SITIOS WEB = Yirenis Soto y Sergio Otero</p>
+      <h2>Contacto</h2>
+      <p>
+        Si estás interesado en aprender más sobre ciencia de datos, contáctanos:
+      </p>
+      <p>Actividad de DISEÑO DE SITIOS WEB = Yirenis Soto y Sergio Otero</p>
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Ciencia de Datos. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Ciencia de Datos. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
-</body>
+    <script src="script.js"></script>
+    <!-- Enlace al archivo JavaScript -->
+  </body>
 </html>
